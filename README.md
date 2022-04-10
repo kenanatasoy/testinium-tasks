@@ -16,6 +16,27 @@ Task 1 is created from maven-archetype-quickstart to help make build-test-packag
 
 ![image](https://user-images.githubusercontent.com/35261110/162613594-bed595a9-8e1c-494a-8bbd-f83be10bf209.png)
 
+#### #demand1
+
+![image](https://user-images.githubusercontent.com/35261110/162615215-4bdf5d2d-e6ab-4190-9a0a-34ec652458bf.png)
+
+#### #demand2
+
+![image](https://user-images.githubusercontent.com/35261110/162615264-043bcd41-b251-4c34-a3f3-7eb1d64b4c0e.png)
+
+#### #demand3
+
+![image](https://user-images.githubusercontent.com/35261110/162615391-77993412-a8ed-4716-b0ea-2a96b1f3c298.png)
+
+#### #demand4
+
+![image](https://user-images.githubusercontent.com/35261110/162615483-b2d391bf-aabf-4e85-89e0-90274e59f12c.png)
+
+#### #other demands 
+
+The majority of unit tests are written and passed. Still working on the integration tests. <br> 
+Two services(postgres, and spring boot api) are dockerized and run, but rest api endpoints are for some reason not accessible from the browser, still working on it.  
+
 ### Technologies and tools used in these projects
   - JUnit5
   - Spring Boot 2
@@ -23,6 +44,7 @@ Task 1 is created from maven-archetype-quickstart to help make build-test-packag
   - Swagger UI
   - ModelMapper
   - PostgreSQL
+  - psql
   - Lombok
   - Mockito
   - Spring Web
@@ -42,5 +64,4 @@ https://www.youtube.com/channel/UCYt1sfh5464XaDBH0oH_o7Q <br>
 https://www.youtube.com/c/amigoscode <br>
 https://www.baeldung.com/spring-boot-testing <br>
 https://www.baeldung.com/integration-testing-in-spring <br>
-
-
+https://www.baeldung.com/dockerizing-spring-boot-application <br>
