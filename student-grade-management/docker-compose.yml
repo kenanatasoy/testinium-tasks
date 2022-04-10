@@ -1,0 +1,43 @@
+version: '3.3'
+services:
+  postgres-db:
+    container_name: postgres
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=45678
+      - POSTGRES_DB=student_grade_management_db
+      - PGDATA=/data/postgres
+    volumes:
+      - postgres:/data/postgres
+    restart: unless-stopped
+    networks:
+      - network1
+
+
+  student-grade-app:
+    container_name: student-grade-app
+    build: ./
+    image: student-grade-app:latest
+    ports:
+      - "0.0.0.0:8081:8081"
+    restart: always
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - postgres-db
+    links:
+      - postgres-db
+    networks:
+      - network1
+
+
+networks:
+  network1:
+    driver: bridge
+
+
+volumes:
+  postgres:

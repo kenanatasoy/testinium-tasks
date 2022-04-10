@@ -1,0 +1,6 @@
+
+server.port: 8081
+
+#datasource conf
+spring.datasource.url: jdbc:postgresql://postgres:5432/student_grade_management_db
+
