@@ -9,7 +9,7 @@ public class ReverseStarTree {
 
         try{
 
-            System.out.print("Enter the step number for your star tree: ");
+            System.out.print("Enter the tree level for your star tree: ");
             Scanner in = new Scanner(System.in);
             int treeLevel = in.nextInt();
 

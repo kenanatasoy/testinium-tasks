@@ -10,7 +10,7 @@ import org.springframework.web.context.annotation.RequestScope;
 @RestController
 @RequestScope
 @CrossOrigin
-@RequestMapping("/courseregistries/")
+@RequestMapping("/course_registries/")
 public class CourseRegistryController {
 
     private final CourseRegistryService courseRegistryService;
