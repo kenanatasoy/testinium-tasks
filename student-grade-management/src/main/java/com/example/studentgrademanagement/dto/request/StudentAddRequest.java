@@ -10,6 +10,7 @@ import javax.validation.constraints.NotNull;
 @Setter
 @ToString
 @Builder
+@EqualsAndHashCode
 public class StudentAddRequest {
 
     @NotNull

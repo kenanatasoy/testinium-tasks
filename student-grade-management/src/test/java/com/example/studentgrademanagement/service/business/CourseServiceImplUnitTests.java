@@ -35,7 +35,7 @@ class CourseServiceImplUnitTests {
 
 
     @Test
-    void createANewCourseThrowsEntityExistsExceptionWhenCourseExistsByCode() {
+    void createANewCourse_ThrowsEntityExistsException_WhenCourseExistsByCode() {
 
         //given
         String courseCode = "Math45";
@@ -68,7 +68,7 @@ class CourseServiceImplUnitTests {
 
 
     @Test
-    void createANewCourseThrowsEntityExistsExceptionWhenCourseExistsByName() {
+    void createANewCourse_ThrowsEntityExistsException_WhenCourseExistsByName() {
 
         //given
         String courseCode = "Math45";
@@ -100,7 +100,7 @@ class CourseServiceImplUnitTests {
 
 
     @Test
-    void createANewCourseCreatesANewCourseSuccessFully() {
+    void createANewCourse_CreatesANewCourseSuccessFully_WhenCourseCodeAndCourseNameAreGiven() {
 
         //given
         String courseCode = "Math45";
@@ -140,7 +140,7 @@ class CourseServiceImplUnitTests {
 
 
     @Test
-    void getCourseByCodeThrowsEntityNotFoundExceptionWhenCouldNotFindCourse(){
+    void getCourseByCode_ThrowsEntityNotFoundException_WhenCouldNotFindCourse(){
 
         //given
         String courseCode = "Math45";
@@ -161,7 +161,7 @@ class CourseServiceImplUnitTests {
 
 
     @Test
-    void getCourseByCodeSuccessfullyGetsCourse(){
+    void getCourseByCode_SuccessfullyGetsCourse_WhenCourseCodeAndCourseNameAreGiven(){
 
         //given
         String courseCode = "Math45";

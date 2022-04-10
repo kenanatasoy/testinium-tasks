@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @Setter
 @ToString
 @Builder
+@EqualsAndHashCode
 public class CourseRegistryGetResponse {
 
     private Long id;

@@ -22,7 +22,7 @@ class CourseControllerUnitTests {
     private CourseController courseController;
 
     @Test
-    void createANewCourseSuccessfullyCreatesNewCourse() {
+    void createANewCourse_SuccessfullyCreatesNewCourse_WhenCourseAddRequestIsGiven() {
 
         //given
         CourseAddRequest courseAddRequest = CourseAddRequest.builder()

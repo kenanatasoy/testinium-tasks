@@ -40,7 +40,7 @@ public class RestControllerExceptionHandler {
                 .map(ConstraintViolation::getMessage)
                 .toList()
                 .toString();
-        return new ErrorResponse("Constraint violation.", message);
+        return new ErrorResponse("Constraint violation occurred.", message);
     }
 
 
@@ -59,7 +59,7 @@ public class RestControllerExceptionHandler {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ErrorResponse handleDataIntegrityViolationException(DataIntegrityViolationException e) {
         return new ErrorResponse("Rest API, Data integrity violation, " +
-                "You perhaps tried to repeat composite unique key in course_registries table => " +
+                "You perhaps tried to repeat the composite unique key in course_registries table => " +
                 "(schoolYearCode, studentId and courseCode trio)",
                 e.getMessage());
     }

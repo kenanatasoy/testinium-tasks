@@ -25,7 +25,7 @@ class SchoolYearServiceImplTest {
     private SchoolYearServiceImpl schoolYearServiceImpl;
 
     @Test
-    void getSchoolYearByCodeThrowsEntityNotFoundExceptionWhenCouldNotFindTheSchoolYear() {
+    void getSchoolYearByCode_ThrowsEntityNotFoundException_WhenCouldNotFindTheSchoolYear() {
 
         //given
         String schoolYearCode = "19-20";
@@ -42,7 +42,7 @@ class SchoolYearServiceImplTest {
 
 
     @Test
-    void getSchoolYearByCodeGetsSchoolYearSuccessfully() {
+    void getSchoolYearByCode_GetsSchoolYearSuccessfully_WhenSchoolYearCodeIsGiven() {
 
         //given
         String schoolYearCode = "19-20";

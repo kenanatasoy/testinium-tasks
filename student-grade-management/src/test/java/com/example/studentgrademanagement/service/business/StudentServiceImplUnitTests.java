@@ -86,7 +86,7 @@ class StudentServiceImplUnitTests {
     }
 
     @Test
-    void getStudentByIdThrowsSuccessfullyGetsStudent() {
+    void getStudentById_ThrowsSuccessfullyGetsStudent_WhenStudentIdIsGiven() {
 
         //given
         Long studentId = 7L;

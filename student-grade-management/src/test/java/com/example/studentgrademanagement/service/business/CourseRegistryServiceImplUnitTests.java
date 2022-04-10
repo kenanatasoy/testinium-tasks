@@ -42,7 +42,7 @@ class CourseRegistryServiceImplUnitTests {
 
 
     @Test
-    void assignACourseToAStudentRunsSuccessfully() {
+    void assignACourseToAStudent_RunsSuccessfully_WhenBothSchoolYearCodeAndCodeAreGiven() {
 
         //given
         String schoolYearCode = "20-21";
@@ -86,7 +86,7 @@ class CourseRegistryServiceImplUnitTests {
     }
 
     @Test
-    void listAllGradesAndAverageGradeOfAStudentThrowsEntityNotFoundExceptionWhenCouldNotFindCourseRegistry() {
+    void listAllGradesAndAverageGradeOfAStudent_ThrowsEntityNotFoundException_WhenCouldNotFindCourseRegistry() {
 
         //given
         String schoolYearCode = "20-21";
@@ -106,7 +106,7 @@ class CourseRegistryServiceImplUnitTests {
 
 
     @Test
-    void listAllGradesAndAverageGradeOfAStudentRunsSuccessfully() {
+    void listAllGradesAndAverageGradeOfAStudent_RunsSuccessfully_WhenSchoolYearCodeAndCourseAreGiven() {
 
         //given
         String schoolYearCode = "20-21";
@@ -167,7 +167,7 @@ class CourseRegistryServiceImplUnitTests {
     }
 
     @Test
-    void listAllGradesAndAverageGradeOfAllStudentsRunsSuccessfully() {
+    void listAllGradesAndAverageGradeOfAllStudents_RunsSuccessfully_WhenSchoolYearCodeAndCourseCodeAreGiven() {
 
         //given
         String schoolYearCode = "20-21";

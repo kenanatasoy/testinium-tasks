@@ -31,7 +31,7 @@ class ExamServiceImplUnitTests {
     private ExamServiceImpl examServiceImpl;
 
     @Test
-    void assignGradeToAnExamThrowsEntityNotFoundExceptionWhenCouldNotFindTheExamToAssignGradeTo() {
+    void assignGradeToAnExam_ThrowsEntityNotFoundException_WhenCouldNotFindTheExamToAssignGradeTo() {
 
         //given
         Long id = 54645654L;
@@ -51,7 +51,7 @@ class ExamServiceImplUnitTests {
 
 
     @Test
-    void assignGradeToAnExamSuccessfullyAssignsGradeToTheExam() {
+    void assignGradeToAnExam_SuccessfullyAssignsGradeToTheExam_WhenExamIdAndExamGradeAreGiven() {
 
         //given
         Long examId = 54645654L;
@@ -79,7 +79,6 @@ class ExamServiceImplUnitTests {
 
         //then
         assertEquals(examGetResponse, examServiceImpl.assignGradeToAnExam(examId, examGrade));
-
 
     }
 
