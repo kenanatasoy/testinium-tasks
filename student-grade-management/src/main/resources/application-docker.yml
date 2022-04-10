@@ -1,5 +1,5 @@
 
-server.port: 8081
+server.port: 8085
 
 #datasource conf
 spring.datasource.url: jdbc:postgresql://postgres:5432/student_grade_management_db

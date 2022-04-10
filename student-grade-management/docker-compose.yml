@@ -22,8 +22,7 @@ services:
     build: ./
     image: student-grade-app:latest
     ports:
-      - "0.0.0.0:8081:8081"
-    restart: always
+      - "8085:8085"
     environment:
       - SPRING_PROFILES_ACTIVE=docker
     depends_on:
