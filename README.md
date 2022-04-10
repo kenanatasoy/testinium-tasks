@@ -35,7 +35,7 @@ Task 1 is created from maven-archetype-quickstart to help make build-test-packag
 #### #other demands 
 
 Many unit and inegration tests are written and passed. <br> 
-Two services(postgres, and spring boot api) are dockerized and run, but rest api endpoints are for some reason not accessible from the browser, still working on it.  
+Two services(postgres, and spring boot api) are dockerized and run, but rest api endpoints are for some reason not accessible from the browser, perhaps there is an issue with exposing and publishing ports in the container, still working on it.  
 
 ### Technologies and tools used in these projects
   - JUnit5
