@@ -13,9 +13,6 @@ services:
     volumes:
       - postgres:/data/postgres
     restart: unless-stopped
-    networks:
-      - network1
-
 
   student-grade-app:
     container_name: student-grade-app
@@ -29,14 +26,6 @@ services:
       - postgres-db
     links:
       - postgres-db
-    networks:
-      - network1
-
-
-networks:
-  network1:
-    driver: bridge
-
 
 volumes:
   postgres:

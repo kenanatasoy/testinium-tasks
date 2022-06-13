@@ -31,3 +31,4 @@ spring.mvc.pathmatch.matching-strategy: ANT_PATH_MATCHER
 
 apiMajorVersion: 1
 apiMinorVersion: 1
+
